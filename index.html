@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/87461a7e6a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <figure>
+                <img src="./assets/logo.png" alt="" id="personal-logo">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                    ">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                    ">Projects</a>
+                </li> 
+                <li class="nav__link">
+                    <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                    "><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title red">I'm Freddie.</h1>
+                <p class="header__para">I'm an aspiring <b class="red">frontend software engineer</b> with a passion for building high quality, responsive web applications, with the aim to improve the overall user experience.
+                <br>
+                Click the links below to learn more about me.
+                </p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/freddie-brewin/" class="social__link click" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/freddieb12345" class="social__link click" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="./assets/Resume.pdf" class="social__link click" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <button class="mail__btn click">
+            <i class="fa-solid fa-envelope"></i>
+        </button>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Some info about me</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal__para">
+                    I'm 24 year-old <b class="red">frontend software engineer</b> with a passion for building high quality, <b class="red">responsive</b> web applications, with the aim to improve the overall <b class="red">user experience.</b>
+                    <br>
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img src="./assets/512px-Devicon-html5-plain.svg.png" alt="" class="modal__language--img">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/CSS3_logo.svg.png" alt="" class="modal__language--img">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/JavaScript-logo.png" alt="" class="modal__language--img">
+                        <span class="language__name">JAVASCRIPT</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/React-icon.svg.png" alt="" class="modal__language--img">
+                        <span class="language__name">REACT</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/640px-Python-logo-notext.svg.png" alt="" class="modal__language--img">
+                        <span class="language__name">PYTHON</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/640px-Selenium_Logo.png" alt="" class="modal__language--img">
+                        <span class="language__name">SELENIUM</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/640px-Robot-framework-logo.png" alt="" class="modal__language--img">
+                        <span class="language__name">ROBOT FRAMEWORK</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/GraphQL_Logo.svg.png" alt="" class="modal__language--img">
+                        <span class="language__name">GRAPHQL</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title-contact">
+                    Contact me below!
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">
+                    I'd love to hear from  you
+                </h4>
+                <form class="contact__form" action="">
+                    <div class="form__item">
+                        <label for="name" class="form__item--label">Name</label>
+                        <input type="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label for="name" class="form__item--label">E-mail</label>
+                        <input type="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label for="name" class="form__item--label">Message</label>
+                        <textarea type="input" name="user_message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send message my way
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! I will try and get back to you as soon as possible!
+                </div>
+            </div>
+            <i class="fa-solid fa-x modal__exit click"></i>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my previous <span class="red">Projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/outgrown-homePage.png" alt="" class="project__img">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Outgrown
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JAVASCRIPT, NODEJS, EXPRESSJS, MONGODB, REACT
+                                </h4>
+                                <p class="project__description--para">
+                                    Outgrown is a fresh take on the traditional e-commerce app, created to ease the burden on parents of young children through the trading and selling of kids' clothing, toys, furniture and other paraphernalia that is often essential but prohibitively expensive for first-time parents. Our app promotes recycling and rehoming of essential children's items. Great for parents, great for kids.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/wa20/outgrown" class="project__description--link" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link no-cursor">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/outgrown-homePage.png" alt="" class="project__img">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Outgrown
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JAVASCRIPT, NODEJS, EXPRESSJS, MONGODB, REACT
+                                </h4>
+                                <p class="project__description--para">
+                                    Outgrown is a fresh take on the traditional e-commerce app, created to ease the burden on parents of young children through the trading and selling of kids' clothing, toys, furniture and other paraphernalia that is often essential but prohibitively expensive for first-time parents. Our app promotes recycling and rehoming of essential children's items. Great for parents, great for kids.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/wa20/outgrown" class="project__description--link" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link no-cursor">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/outgrown-homePage.png" alt="" class="project__img">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Outgrown
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JAVASCRIPT, NODEJS, EXPRESSJS, MONGODB, REACT
+                                </h4>
+                                <p class="project__description--para">
+                                    Outgrown is a fresh take on the traditional e-commerce app, created to ease the burden on parents of young children through the trading and selling of kids' clothing, toys, furniture and other paraphernalia that is often essential but prohibitively expensive for first-time parents. Our app promotes recycling and rehoming of essential children's items. Great for parents, great for kids.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/wa20/outgrown" class="project__description--link" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link no-cursor">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img src="./assets/logo.png" alt="" class="footer__logo--img">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="#" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">
+                        Github
+                    </a>
+                    <a href="#" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">
+                        LinkedIn
+                    </a>
+                    <a href="#" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">
+                        Email
+                    </a>
+                    <a href="#" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">
+                        Resume
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    Copyright &copy; Freddie Brewin 2022
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
