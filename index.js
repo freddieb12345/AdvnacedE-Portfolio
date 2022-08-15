@@ -1,5 +1,6 @@
 let isModalOpen = false;
 const scaleFactor = 1 / 20;
+let constrastToggle
 
 function moveBackground(event) {
     const shapes = document.querySelectorAll(".shape")
